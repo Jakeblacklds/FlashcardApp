@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react"
+import { NavigationContainer } from "@react-navigation/native"
+import { createStackNavigator } from "@react-navigation/stack"
+import FlashcardListScreen from "./Screens/FlashcardDetailScreen/FlashcardListScreen"
+import AddFlashcardScreen from "./Screens/AddFlashcardScreen/AddFlashcardScreen"
+import FlashcardDetailScreen from "./Screens/FlashcardListScreen/FlashcardDetailScreen"
+import HomeScreen from "./Screens/HomeScreen/HomeScreen"
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="FlashcardList" component={FlashcardListScreen} />
+        <Stack.Screen name="FlashcardDetail" component={FlashcardDetailScreen} />
+        <Stack.Screen name="AddFlashcard" component={AddFlashcardScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

@@ -1,0 +1,22 @@
+export default  [
+    { id: 1, spanish: "perro", english: "dog" },
+    { id: 2, spanish: "gato", english: "cat" },
+    { id: 3, spanish: "casa", english: "house" },
+    { id: 4, spanish: "coche", english: "car" },
+    { id: 5, spanish: "amarillo", english: "yellow" },
+    { id: 6, spanish: "rojo", english: "red" },
+    { id: 7, spanish: "manzana", english: "apple" },
+    { id: 8, spanish: "plátano", english: "banana" },
+    { id: 9, spanish: "agua", english: "water" },
+    { id: 10, spanish: "fuego", english: "fire" },
+    { id: 11, spanish: "amigo", english: "friend" },
+    { id: 12, spanish: "libro", english: "book" },
+    { id: 13, spanish: "cielo", english: "sky" },
+    { id: 14, spanish: "sol", english: "sun" },
+    { id: 15, spanish: "luna", english: "moon" },
+    { id: 16, spanish: "hora", english: "hour" },
+    { id: 17, spanish: "árbol", english: "tree" },
+    { id: 18, spanish: "montaña", english: "mountain" },
+    { id: 19, spanish: "playa", english: "beach" },
+    { id: 20, spanish: "comida", english: "food" }
+  ]
